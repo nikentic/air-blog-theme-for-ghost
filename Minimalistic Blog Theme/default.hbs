@@ -20,12 +20,11 @@
 <body>
 <img class="plane" src="{{asset "img/paper.svg"}}">
 <div class="lateral">
-  {{#author}}
   <aside class="author">
     
-    <img class="profile-image" src="{{image}}" alt="" />
-    <p class="name">by <strong>{{name}}</strong></p>
-    <p class="about">{{bio}}</p>
+    <img class="profile-image" src="{{asset "img/profile-image.jpg"}}" alt="" />
+    <p class="name">by <strong>{{author.name}}Jonathan Grahl</strong></p>
+    <p class="about">Heavy Linux-user, developer, geek, GNU-GPL v3 compliant</p>
     <p class="address">Stockholm, Sweden</p>
 
     <ul class="social">
@@ -35,7 +34,6 @@
     </ul>
 
   </aside>
-  {{/author}}
 </div>
     <div class="{{body_class}} home">
         <!--[if lt IE 8]>
