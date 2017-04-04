@@ -20,20 +20,22 @@
 <body>
 <img class="plane" src="{{asset "img/paper.svg"}}">
 <div class="lateral">
-          <aside class="author">
-            
-            <img class="profile-image" src="{{asset "img/profile-image.jpg"}}" alt="" />
-            <p class="name">by <strong>Jonathan Grahl</strong></p>
-            <p class="about">Heavy Linux-user, developer, geek, GNU-GPL v3 compliant</p>
-            <p class="address">Stockholm, Sweden</p>
+  {{#author}}
+  <aside class="author">
+    
+    <img class="profile-image" src="{{image}}" alt="" />
+    <p class="name">by <strong>{{name}}</strong></p>
+    <p class="about">{{bio}}</p>
+    <p class="address">Stockholm, Sweden</p>
 
-            <ul class="social">
-              <li><a class="icon-facebook-squared" href="http://facebook.com/nikentic" target="_blank" title="Facebook"></a></li>
-              <li><a class="icon-github" href="https://github.com/nikentic" target="_blank" title="Fork me on Github"></a></li>
-              <li><a class="icon-instagram" href="https://instagram.com/heligagrahlen" target="_blank" title="Instagram"></a></li>
-            </ul>
+    <ul class="social">
+      <li><a class="icon-facebook-squared" href="http://facebook.com/nikentic" target="_blank" title="Facebook"></a></li>
+      <li><a class="icon-github" href="https://github.com/nikentic" target="_blank" title="Fork me on Github"></a></li>
+      <li><a class="icon-instagram" href="https://instagram.com/heligagrahlen" target="_blank" title="Instagram"></a></li>
+    </ul>
 
-          </aside>
+  </aside>
+  {{/author}}
 </div>
     <div class="{{body_class}} home">
         <!--[if lt IE 8]>
